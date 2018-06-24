@@ -1,0 +1,207 @@
+@media all and (orientation : landscape) { 
+    /*横屏时*/
+    #print{
+        position : absolute ;
+        top : 0 ; 
+        left : 0 ;
+        width : 100% ;
+        height : 100% ;
+     }
+}
+@media all and (orientation : portrait){ 
+    /* 竖屏时 */
+     #print{
+        position : absolute ;
+     }
+} 
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 0.3rem;
+    color: #fff;
+}
+.toup {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.content{
+    width: 100%;
+    height: 7.68rem;
+    background: #9b1e23;
+}
+.header{
+    height: .4rem;
+    line-height: 0.4rem;
+}
+
+.header img{
+    float: left;
+    margin: .01rem 0 0 .5rem;
+}
+.header h1{
+    float: left;
+    font-size: .2rem;
+} 
+/* 外圈 */
+.maincontent {
+    background:#b05123;
+    width: 100%;
+    height: 6.60rem;
+    position: relative;
+}
+/* 内圈 */
+.maincenter{
+    position: absolute;
+    top: 0.25rem;
+    height: 6.1rem;
+    width: 100%;
+    background-color:#b05123;
+    background-image:url('../images/ios/kuangjia.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/* 1-20 */
+.first{
+    justify-content:center;
+    align-items:center;
+    display:-webkit-flex;
+}
+.choose{
+    margin-top: .3rem;
+}
+.choose h2{
+    font-size: .3rem;
+    margin-top: .7rem;
+}
+.choiceList {
+    margin-top: 0.44rem;
+}
+.choiceList ul li {
+    height: 2.5rem;
+    width: 1.48rem;
+    float: left;
+    text-align: center;
+    font-size: .3rem;
+    margin-right: .4rem;
+    position: relative;
+}
+.choiceList ul li:last-child {
+    margin:0
+}
+
+.choiceList ul li p{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+}
+.choiceTitle {
+    clear: both;
+    padding-top: .7rem;
+}
+.que{
+    background: url('../images/ios/xiaokuang.png') no-repeat;
+}
+/* 21-29 */
+.chooseRed h2{
+    font-size: .3rem;
+    margin: .85rem 0 0 1.55rem;
+}
+.select{
+    margin: .6rem 0 0 1.55rem;
+}
+
+.select ul{
+    margin-top: .5rem;
+}
+.select ul li{
+    height: 0.4rem;
+    line-height: 0.4rem;
+    padding: 0 0 0.2rem 0 ;
+}
+/* 30-40 */
+
+.choice{
+     margin: .6rem 0 0 1.55rem;
+}
+
+.choice ul{
+    margin-top: .5rem;
+    padding-left: 30%;
+}
+
+.choice ul li {
+    padding: 0.05rem 0.5rem;
+    float: left;
+}
+/* 41-50 */
+.choosePT h2 {
+    font-size: .3rem;
+    margin: .65rem 0 0 1.55rem;
+}
+.choicePT{
+    margin: .3rem 0 0 1.55rem;
+}
+.titleName {
+    float: left;
+}
+.titleName span{
+    float: left;
+}
+
+.choicePT>ul{
+    clear: both;
+    margin: 0.3rem 0 0 1.2rem;
+}
+
+.choicePT>ul li {
+    float: left;
+    padding-right: 0.4rem;
+    text-align: center;
+}
+
+.lingxing{
+    width: .67rem;
+    height: .64rem;
+}
+
+.cho{
+    float: left;
+    margin: 40% 0 0 .75rem;
+}
+
+.chopad{
+    margin: 40% 0 0 .1rem;
+
+}
+.cho ul li{
+    float: left;
+    text-align: center;
+    padding-right: 0.4rem;
+}
+
+.result{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.result p{
+    margin-bottom: 0.2rem;
+}
+
+.result button{
+    background: #4b4f53;
+    border-radius: 0.1rem;
+    border: none;
+    padding: 0.15rem;
+    font-size: 0.2rem;
+    margin-top: .5rem;
+    margin-left: 25%;
+    color: #fff;
+}
+.smile {
+    background: url(../images/smile.png) 60% 10% no-repeat;
+}
