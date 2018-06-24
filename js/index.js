@@ -73,7 +73,7 @@ var mySwiper = new Swiper('#swiper', {
 });
 // 计算结果
 function countResult() {
-    // console.log(rightCount);    
+    console.log(rightCount);    
     var vlu = (rightCount / alltitles * 100).toFixed(2);
     $('#rightCount').html("您一共答对了 " + rightCount + " 道题");
     $('#rightRaio').html("正确率：" + vlu + "%");
@@ -82,7 +82,8 @@ $("#t2").hide();
 // 计分器
 var rightCount = 0;
 var alltitles = 50;
-$(".swiper-container").on("click", 'li', function () {
+$(".swiper-container li").bind('click', function () {
+    $(this).unbind('click');
     // console.log("你选择了：", $(this)[0].innerText);
     var this_active = $(this).parents(".swiper-slide").index();
     // console.log("当前题的index:", this_active);
