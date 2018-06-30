@@ -75,8 +75,9 @@ var mySwiper = new Swiper('#swiper', {
 function countResult() {
     console.log(rightCount);    
     var vlu = (rightCount / alltitles * 100).toFixed(2);
-    $('#rightCount').html("您一共答对了 " + rightCount + " 道题");
-    $('#rightRaio').html("正确率：" + vlu + "%");
+    $('#rightCount').html(rightCount + '+ corret');
+    $('#rightCount1').html(rightCount + '+ 正确');
+    $('#rightRaio1').html("正确率：" + vlu + "%");
 }
 $("#t2").hide();
 // 计分器
@@ -86,15 +87,15 @@ $(".swiper-container li").bind('click', function () {
     $(this).unbind('click');
     // console.log("你选择了：", $(this)[0].innerText);
     var this_active = $(this).parents(".swiper-slide").index();
-    // console.log("当前题的index:", this_active);
+    console.log("当前题数:", this_active+1);
     setTimeout(function () {
         mySwiper.slideTo(this_active + 1, 1000)
-    }, 500);
+    }, 300);
     var a = answer[this_active][this_active + 1];
     var b = $(this)[0].innerText.substr(0, 1);
     var c = $(this)[0].innerText.trim();
     if (a == b || a == c ) {
-        // console.log('select right!');
+        console.log('select right!');
         rightCount += 1;
     } else {
         // console.log('select error!')

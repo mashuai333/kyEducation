@@ -162,11 +162,6 @@ body{
     text-align: center;
 }
 
-.lingxing{
-    width: .67rem;
-    height: .64rem;
-}
-
 .cho{
     float: left;
     margin: 25% 0 0 .35rem;
@@ -184,24 +179,29 @@ body{
 
 .result{
     width: 100%;
-    height: 100%;
-    padding: 2rem;
+    height: 5.5rem;
+    padding: 0.5rem 0 0 0.78rem;
 }
 
-.result p{
+.resultP{
     margin-bottom: 0.2rem;
 }
-
+.resultl{
+    margin-bottom: 0.65rem;
+}
 .result button{
     background: #4b4f53;
     border-radius: 0.1rem;
     border: none;
     padding: 0.15rem;
     font-size: 0.2rem;
-    margin-top: .5rem;
-    margin-left: 25%;
     color: #fff;
 }
-.smile {
-    background: url(../images/smile.png) 60% 10% no-repeat;
+.logolast {
+    background-image: url(../images/logo-b.png),url(../images/1.png) ,url(../images/2.png) ,url(../images/3.png),url(../images/4.png);
+    background-position: 70% 32% ,50% 94%,57% 94%,67% 92%,79% 92%;
+    background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+}
+.fot{
+    font-size: 0.24rem;
 }
