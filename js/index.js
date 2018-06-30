@@ -87,19 +87,20 @@ $(".swiper-container li").bind('click', function () {
     $(this).unbind('click');
     // console.log("你选择了：", $(this)[0].innerText);
     var this_active = $(this).parents(".swiper-slide").index();
-    console.log("当前题数:", this_active+1);
-    setTimeout(function () {
-        mySwiper.slideTo(this_active + 1, 1000)
-    }, 300);
+    // console.log("当前题数:", this_active+1);
     var a = answer[this_active][this_active + 1];
     var b = $(this)[0].innerText.substr(0, 1);
     var c = $(this)[0].innerText.trim();
-    if (a == b || a == c ) {
-        console.log('select right!');
-        rightCount += 1;
-    } else {
-        // console.log('select error!')
-    }
+    setTimeout(function () {
+        if (a == b || a == c ) {
+            // console.log('select right!');
+            rightCount += 1;
+        } else {
+            // console.log('select error!')
+        }
+        mySwiper.slideTo(this_active + 1, 1000)
+    }, 300);
+    
     if (this_active == 49) {
         countResult();
     }
